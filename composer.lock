@@ -1,0 +1,53 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "db43a83925065a2a6abc3ff3f057d667",
+    "packages": [
+        {
+            "name": "robertbyrnes/dataconnection",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RobertByrnes/DataConnection.git",
+                "reference": "613c036e59d0ecf507f7f834461a2d13bfb6ec30"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RobertByrnes/DataConnection/zipball/613c036e59d0ecf507f7f834461a2d13bfb6ec30",
+                "reference": "613c036e59d0ecf507f7f834461a2d13bfb6ec30",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "": "classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "description": "Database connection dependency using PDO for PHP 7^.",
+            "support": {
+                "issues": "https://github.com/RobertByrnes/DataConnection/issues",
+                "source": "https://github.com/RobertByrnes/DataConnection/tree/master"
+            },
+            "time": "2021-04-07T19:20:34+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "robertbyrnes/dataconnection": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}

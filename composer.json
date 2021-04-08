@@ -1,0 +1,13 @@
+{
+    "name": "robertbyrnes/readmegenerator",
+    "description": "uses PHP ReflectionClass to read PHP classes and docs.",
+    "require": {
+        "robertbyrnes/dataconnection": "dev-master@dev"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "": "classes/"
+        }
+    }
+}
