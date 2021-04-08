@@ -3,6 +3,7 @@
 require __DIR__.'/../vendor/autoload.php';
 
 $reflector = new Mirror('DataConnection');
-$reflector->initialClassIdentification();
+//$reflector->initialClassIdentification();
 $reflector->readComments();
-$reflector->tell();
+$reflector->parseComments();
+$reflector->tell('parsedComments');

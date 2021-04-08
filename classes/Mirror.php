@@ -1,13 +1,38 @@
 <?php
+ /**
+ * @author Robert Byrnes
+ * @created 08/04/2021
+ **/
 
 require __DIR__.'/../vendor/autoload.php';
 
+/**
+ * Uses PHP ReflectionClass to read a class, logging its structure and dependencies, and parsing
+ * PHPDoc comments into a clean array.
+ */
 Class Mirror
 {
+    use CommentParser;
+
+    /**
+     * Object of stdClass to store data gathered from enquiry class.
+     * 
+     * @var object
+     */
     protected object $class;
 
+    /**
+     * Object of the ReflectionClass
+     * 
+     * @var object
+     */
     protected object $reflection;
 
+    /**
+     * Class contructor
+     *
+     * @param string $className
+     */
     public function __construct(string $className)
     {
         $this->class = new stdClass;
@@ -15,7 +40,12 @@ Class Mirror
         $this->reflection = new ReflectionClass($this->class->name);
     }
 
-    public function initialClassIdentification()
+    /**
+     * Gethers data about the class.
+     *
+     * @return void
+     */
+    public function initialClassIdentification() : void
     {
         $this->class->callable = $this->reflection->isInstantiable();
         $this->class->typeCheck = $this->reflection->isTrait();
@@ -31,15 +61,50 @@ Class Mirror
         $this->class->abstraction = $this->reflection->isAbstract();
     }
 
-    public function readComments()
+    /**
+     * Gets the PHPDoc comments from the class.
+     *
+     * @return void
+     */
+    public function readComments() : void
     {
-        $commentator = $this->reflection = new ReflectionClass($this->class->name);
-        var_dump($commentator->getDocComment());
+        if (empty($this->class->methods))
+        {
+            $this->class->methods = $this->reflection->getMethods();
+        }
+        $this->class->docComments = [];
+        $this->class->docComments['class_comment'] = $this->reflection->getDocComment();
+        foreach ($this->class->methods as $method)
+        {
+            $this->class->docComments[$method->name] = $this->reflection->getMethod($method->name)->getDocComment();
+        }
     }
 
-    public function tell()
+    /**
+     * Uses the Trait CommentParser to parse the PHPDoc comments into an array.
+     *
+     * @return void
+     */
+    public function parseComments() : void
     {
-        echo '<pre>'.__FILE__."\nLine ".__LINE__."\n".print_r($this->class, true).'</pre>';
+        $this->class->parsedComments = [];
+        foreach ($this->class->docComments as $methodComment => $string)
+        {
+            $this->class->parsedComments[$methodComment] = $this->getParsedComments($string);
+        }
+        unset($this->class->docComments);
+    }
+
+    /**
+     * Helper function to pretty print all or selected properties of the study class object.
+     *
+     * @param boolean $property
+     * @return void
+     */
+    public function tell($property=FALSE) : void
+    {
+        (!$property) ? $subject = $this->class : $subject = $this->class->$property;
+        echo '<pre>'.__FILE__."\nLine ".__LINE__."\n".print_r($subject, true).'</pre>';
         exit;
     }
 }
