@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-04-11 21:08:11
+/* Smarty version 3.1.39, created on 2021-04-12 10:08:20
   from 'C:\wamp64\www\repositories\ReadMeGenerator\templates\classpanel.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6073653b84fca2_96804499',
+  'unifunc' => 'content_60741c14dc6701_20143333',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0d76ed9461d297bcda8653ff4d395f5a178f0294' => 
     array (
       0 => 'C:\\wamp64\\www\\repositories\\ReadMeGenerator\\templates\\classpanel.tpl',
-      1 => 1618173353,
+      1 => 1618212514,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6073653b84fca2_96804499 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60741c14dc6701_20143333 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="container">
 

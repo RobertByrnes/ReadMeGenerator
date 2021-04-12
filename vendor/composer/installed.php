@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'b5dd494a6851e502c351b431394c3e697d4fca81',
+    'reference' => 'da28c26e86a558a73fadcc454ec1479e8fbdd7e1',
     'name' => 'robertbyrnes/readmegenerator',
   ),
   'versions' => 
@@ -28,7 +28,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'b5dd494a6851e502c351b431394c3e697d4fca81',
+      'reference' => 'da28c26e86a558a73fadcc454ec1479e8fbdd7e1',
     ),
     'robertbyrnes/templateengine' => 
     array (
