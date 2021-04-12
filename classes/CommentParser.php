@@ -24,7 +24,7 @@ Trait CommentParser
      * @param string $docComment
      * @return array
      */
-    public function getParsedComments(string $docComment) : array
+    public function extractFromComments(string $docComment) : array
     {
         $this->commentArray = explode('@', $docComment);
         $this->commentArray = $this->parseDescription();
@@ -53,6 +53,36 @@ Trait CommentParser
         {
             $tempArray2[$key] = trim(str_replace("/", "", $stringToSearch));
         }
-        return $tempArray2;
+        return $this->sortElements($tempArray2);
+    }
+
+    /**
+     * Further sorts through the doc comments string to extract discrete comment/param/return.
+     *
+     * @param array $elementsArray
+     * @return array
+     */
+    public function sortElements(array $elementsArray) : array
+    {
+        foreach ($elementsArray as $element => $value)
+        {
+            switch (TRUE)
+            {
+                case (preg_match('/class_comment/', $element)):
+                    $distinctElements['class_comment'][] = $element;
+                    break;
+                case (preg_match('/param /', $value) && !preg_match('/parameter/', $value)):
+                    $trimmedValue = preg_replace('/param /', '', $value);
+                    $distinctElements['params'][] = $trimmedValue;
+                    break;
+                case (preg_match('/return /', $value) && !preg_match('/returns/', $value)):
+                    $trimmedValue = preg_replace('/return /', '', $value);
+                    $distinctElements['return'][] = $trimmedValue;
+                    break;
+                default:
+                    $distinctElements['comments'][] = $value;
+            }
+        }
+        return $distinctElements;
     }
 }

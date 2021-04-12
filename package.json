@@ -1,0 +1,34 @@
+{
+  "name": "readmegenerator",
+  "version": "1.0.0",
+  "description": "Parser for PHPDoc comments.",
+  "main": "index.php",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "jquery": "^3.6.0",
+    "jsdom": "^16.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RobertByrnes/ReadMeGenerator.git"
+  },
+  "keywords": [
+    "PHPDoc",
+    "comments",
+    "params",
+    "methods",
+    "properties",
+    "parent",
+    "child"
+  ],
+  "author": "Robert Byrnes",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/RobertByrnes/ReadMeGenerator/issues"
+  },
+  "homepage": "https://github.com/RobertByrnes/ReadMeGenerator#readme"
+}

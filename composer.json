@@ -2,7 +2,10 @@
     "name": "robertbyrnes/readmegenerator",
     "description": "uses PHP ReflectionClass to read PHP classes and docs.",
     "require": {
-        "robertbyrnes/dataconnection": "dev-master@dev"
+        "robertbyrnes/dataconnection": "dev-master@dev",
+        "robertbyrnes/templateengine": "dev-master@dev",
+        "smarty/smarty": "v3.1.39",
+        "twbs/bootstrap": "4.0.0"
     },
     "minimum-stability": "dev",
     "autoload": {

@@ -25,12 +25,12 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => 'b5dd494a6851e502c351b431394c3e697d4fca81',
     'name' => 'robertbyrnes/readmegenerator',
   ),
   'versions' => 
@@ -43,16 +43,51 @@ private static $installed = array (
       array (
         0 => '9999999-dev',
       ),
-      'reference' => '613c036e59d0ecf507f7f834461a2d13bfb6ec30',
+      'reference' => '4ddfcb002d5febd62a1dff0537b24e64e02e6bf8',
     ),
     'robertbyrnes/readmegenerator' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => 'b5dd494a6851e502c351b431394c3e697d4fca81',
+    ),
+    'robertbyrnes/templateengine' => 
+    array (
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
+      'aliases' => 
+      array (
+        0 => '9999999-dev',
+      ),
+      'reference' => '74d9e183caa8eba84b63f4e185553e1122003664',
+    ),
+    'smarty/smarty' => 
+    array (
+      'pretty_version' => 'v3.1.39',
+      'version' => '3.1.39.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'e27da524f7bcd7361e3ea5cdfa99c4378a7b5419',
+    ),
+    'twbs/bootstrap' => 
+    array (
+      'pretty_version' => 'v4.0.0',
+      'version' => '4.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8a628b943cf31ca0a002c08af661a95772480225',
+    ),
+    'twitter/bootstrap' => 
+    array (
+      'replaced' => 
+      array (
+        0 => 'v4.0.0',
+      ),
     ),
   ),
 );

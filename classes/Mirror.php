@@ -1,5 +1,5 @@
 <?php
- /**
+/**
  * @author Robert Byrnes
  * @created 08/04/2021
  **/
@@ -19,7 +19,7 @@ Class Mirror
      * 
      * @var object
      */
-    protected object $class;
+    public object $class;
 
     /**
      * Object of the ReflectionClass
@@ -88,11 +88,39 @@ Class Mirror
     public function parseComments() : void
     {
         $this->class->parsedComments = [];
+        $i=0;
         foreach ($this->class->docComments as $methodComment => $string)
         {
-            $this->class->parsedComments[$methodComment] = $this->getParsedComments($string);
+            $this->class->parsedComments[$i]['methodName'] = $methodComment;
+            $commentElements = $this->extractFromComments($string);
+
+            if (isset($commentElements['comments']))
+            {
+                $this->class->parsedComments[$i]['comments'] = $commentElements['comments'];
+            }
+            if (isset($commentElements['params']))
+            {
+                $this->class->parsedComments[$i]['params'] = $commentElements['params'];
+            }
+            if (isset($commentElements['return']))
+            {
+                $this->class->parsedComments[$i]['return'] = $commentElements['return'];
+            }
+
+            if ($this->class->parsedComments[$i]['methodName'] == 'class_comment')
+            {
+                $this->class->classComment = $this->class->parsedComments[$i];
+                unset($this->class->parsedComments[$i]);
+            }
+            
+            ++$i;
         }
         unset($this->class->docComments);
+    }
+
+    public function parseProperties()
+    {
+        # code...
     }
 
     /**
