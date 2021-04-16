@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'b5dd494a6851e502c351b431394c3e697d4fca81',
+    'reference' => 'da28c26e86a558a73fadcc454ec1479e8fbdd7e1',
     'name' => 'robertbyrnes/readmegenerator',
   ),
   'versions' => 
@@ -19,7 +19,7 @@
       array (
         0 => '9999999-dev',
       ),
-      'reference' => '4ddfcb002d5febd62a1dff0537b24e64e02e6bf8',
+      'reference' => '0502840c3a91615e08778e3ceac9b94ebbe11eea',
     ),
     'robertbyrnes/readmegenerator' => 
     array (
@@ -28,7 +28,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'b5dd494a6851e502c351b431394c3e697d4fca81',
+      'reference' => 'da28c26e86a558a73fadcc454ec1479e8fbdd7e1',
     ),
     'robertbyrnes/templateengine' => 
     array (
@@ -38,7 +38,7 @@
       array (
         0 => '9999999-dev',
       ),
-      'reference' => '74d9e183caa8eba84b63f4e185553e1122003664',
+      'reference' => '105d8b3005c2309bcd6f112f9c046879f654ec48',
     ),
     'smarty/smarty' => 
     array (

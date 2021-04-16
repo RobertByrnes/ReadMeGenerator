@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/RobertByrnes/DataConnection.git",
-                "reference": "4ddfcb002d5febd62a1dff0537b24e64e02e6bf8"
+                "reference": "0502840c3a91615e08778e3ceac9b94ebbe11eea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RobertByrnes/DataConnection/zipball/4ddfcb002d5febd62a1dff0537b24e64e02e6bf8",
-                "reference": "4ddfcb002d5febd62a1dff0537b24e64e02e6bf8",
+                "url": "https://api.github.com/repos/RobertByrnes/DataConnection/zipball/0502840c3a91615e08778e3ceac9b94ebbe11eea",
+                "reference": "0502840c3a91615e08778e3ceac9b94ebbe11eea",
                 "shasum": ""
             },
             "default-branch": true,
@@ -36,7 +36,7 @@
                 "issues": "https://github.com/RobertByrnes/DataConnection/issues",
                 "source": "https://github.com/RobertByrnes/DataConnection/tree/master"
             },
-            "time": "2021-04-11T10:20:27+00:00"
+            "time": "2021-04-16T18:55:00+00:00"
         },
         {
             "name": "robertbyrnes/templateengine",
@@ -44,12 +44,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/RobertByrnes/TemplateEngine.git",
-                "reference": "74d9e183caa8eba84b63f4e185553e1122003664"
+                "reference": "105d8b3005c2309bcd6f112f9c046879f654ec48"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RobertByrnes/TemplateEngine/zipball/74d9e183caa8eba84b63f4e185553e1122003664",
-                "reference": "74d9e183caa8eba84b63f4e185553e1122003664",
+                "url": "https://api.github.com/repos/RobertByrnes/TemplateEngine/zipball/105d8b3005c2309bcd6f112f9c046879f654ec48",
+                "reference": "105d8b3005c2309bcd6f112f9c046879f654ec48",
                 "shasum": ""
             },
             "default-branch": true,
@@ -68,7 +68,7 @@
                 "issues": "https://github.com/RobertByrnes/TemplateEngine/issues",
                 "source": "https://github.com/RobertByrnes/TemplateEngine/tree/master"
             },
-            "time": "2021-04-09T20:40:05+00:00"
+            "time": "2021-04-16T19:08:33+00:00"
         },
         {
             "name": "smarty/smarty",

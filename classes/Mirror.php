@@ -80,47 +80,21 @@ Class Mirror
         }
     }
 
-    /**
-     * Uses the Trait CommentParser to parse the PHPDoc comments into an array.
-     *
-     * @return void
-     */
-    public function parseComments() : void
+    public function passCommentsToParser() : void
     {
-        $this->class->parsedComments = [];
-        $i=0;
-        foreach ($this->class->docComments as $methodComment => $string)
-        {
-            $this->class->parsedComments[$i]['methodName'] = $methodComment;
-            $commentElements = $this->extractFromComments($string);
-
-            if (isset($commentElements['comments']))
-            {
-                $this->class->parsedComments[$i]['comments'] = $commentElements['comments'];
-            }
-            if (isset($commentElements['params']))
-            {
-                $this->class->parsedComments[$i]['params'] = $commentElements['params'];
-            }
-            if (isset($commentElements['return']))
-            {
-                $this->class->parsedComments[$i]['return'] = $commentElements['return'];
-            }
-
-            if ($this->class->parsedComments[$i]['methodName'] == 'class_comment')
-            {
-                $this->class->classComment = $this->class->parsedComments[$i];
-                unset($this->class->parsedComments[$i]);
-            }
-            
-            ++$i;
-        }
+        $this->class->parsedComments = $this->parseComments($this->class->docComments);
         unset($this->class->docComments);
     }
 
-    public function parseProperties()
+    public function passPropertiesToParser() : void
     {
-        # code...
+        $this->class->propertyComments = [];
+        foreach ($this->class->properties as $property)
+        {
+            $this->class->propertyComments[$property->name] = $this->reflection->getProperty($property->name)->getDocComment();
+        }
+        $this->class->classProperties = $this->parseComments($this->class->propertyComments);
+        unset($this->class->properties);
     }
 
     /**

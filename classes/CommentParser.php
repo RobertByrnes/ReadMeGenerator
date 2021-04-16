@@ -19,6 +19,13 @@ Trait CommentParser
     public array $commentArray;
 
     /**
+     * A var to pass the class comment back to Mirror class.
+     * 
+     * @var array
+     */
+    public array $classComment;
+
+    /**
      * Main function called from classes using this Trait. Returns parsed PHPDoc comments as an array.
      *
      * @param string $docComment
@@ -84,5 +91,43 @@ Trait CommentParser
             }
         }
         return $distinctElements;
+    }
+
+    /**
+     * Uses the Trait CommentParser to parse the PHPDoc comments into an array.
+     *
+     * @return array
+     */
+    public function parseComments($docComments) : array
+    {
+        $parsedComments = [];
+        $i=0;
+        foreach ($docComments as $methodComment => $string)
+        {
+            $parsedComments[$i]['methodName'] = $methodComment;
+            $commentElements = $this->extractFromComments($string);
+
+            if (isset($commentElements['comments']))
+            {
+                $parsedComments[$i]['comments'] = $commentElements['comments'];
+            }
+            if (isset($commentElements['params']))
+            {
+                $parsedComments[$i]['params'] = $commentElements['params'];
+            }
+            if (isset($commentElements['return']))
+            {
+                $parsedComments[$i]['return'] = $commentElements['return'];
+            }
+
+            if ($parsedComments[$i]['methodName'] == 'class_comment')
+            {
+                $this->classComment = $parsedComments[$i];
+                unset($parsedComments[$i]);
+            }
+            
+            ++$i;
+        }
+        return $parsedComments;
     }
 }

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-04-11 21:08:11
+/* Smarty version 3.1.39, created on 2021-04-15 19:54:04
   from 'C:\wamp64\www\repositories\ReadMeGenerator\templates\classpanel.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6073653b84fca2_96804499',
+  'unifunc' => 'content_607899dc84ed34_02706668',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0d76ed9461d297bcda8653ff4d395f5a178f0294' => 
     array (
       0 => 'C:\\wamp64\\www\\repositories\\ReadMeGenerator\\templates\\classpanel.tpl',
-      1 => 1618173353,
+      1 => 1618341569,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6073653b84fca2_96804499 (Smarty_Internal_Template $_smarty_tpl) {
+function content_607899dc84ed34_02706668 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="container">
 
@@ -60,16 +60,16 @@ if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['property']->valu
 $_smarty_tpl->tpl_vars['info']->do_else = false;
 ?>
                                 <tr>
-                                    <td><?php echo $_smarty_tpl->tpl_vars['info']->value->name;?>
+                                    <td><?php echo $_smarty_tpl->tpl_vars['info']->value['methodName'];?>
 </td>
-                                    <td> Unkown </td>
+                                    <td><?php echo $_smarty_tpl->tpl_vars['info']->value['comments'][0];?>
+ </td>
                                 </tr>
                             <?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                         </tbody>
-                    </table>
-                            
+                    </table>         
                 </div><!-- .col-md-12 -->
 
                 <div class="clearfix"></div>
@@ -155,8 +155,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                         </tbody>
-                    </table>
-                            
+                    </table>         
                 </div><!-- .col-md-12 -->
 
                 <div class="alert alert-info col-md-12">

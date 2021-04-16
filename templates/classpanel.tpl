@@ -34,13 +34,12 @@
                         <tbody>
                             {foreach from=$properties key=property item=info}
                                 <tr>
-                                    <td>{$info->name}</td>
-                                    <td> Unkown </td>
+                                    <td>{$info.methodName}</td>
+                                    <td>{$info.comments.0} </td>
                                 </tr>
                             {/foreach}
                         </tbody>
-                    </table>
-                            
+                    </table>         
                 </div><!-- .col-md-12 -->
 
                 <div class="clearfix"></div>
@@ -88,8 +87,7 @@
                                 </tr>
                             {/foreach}
                         </tbody>
-                    </table>
-                            
+                    </table>         
                 </div><!-- .col-md-12 -->
 
                 <div class="alert alert-info col-md-12">
