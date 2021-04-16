@@ -16,7 +16,7 @@ Trait CommentParser
      * 
      * @var array
      */
-    public array $commentArray;
+    public $commentArray;
 
     /**
      * A var to pass the class comment back to Mirror class.
@@ -31,7 +31,7 @@ Trait CommentParser
      * @param string $docComment
      * @return array
      */
-    public function extractFromComments(string $docComment) : array
+    public function extractFromComments($docComment) : array
     {
         $this->commentArray = explode('@', $docComment);
         $this->commentArray = $this->parseDescription();
@@ -69,7 +69,7 @@ Trait CommentParser
      * @param array $elementsArray
      * @return array
      */
-    public function sortElements(array $elementsArray) : array
+    public function sortElements($elementsArray) : array
     {
         foreach ($elementsArray as $element => $value)
         {

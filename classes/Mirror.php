@@ -19,21 +19,21 @@ Class Mirror
      * 
      * @var object
      */
-    public object $class;
+    public  $class;
 
     /**
      * Object of the ReflectionClass
      * 
      * @var object
      */
-    protected object $reflection;
+    protected  $reflection;
 
     /**
      * Class contructor
      *
-     * @param string $className
+     * @param  $className
      */
-    public function __construct(string $className)
+    public function __construct($className)
     {
         $this->class = new stdClass;
         $this->class->name = $className;
