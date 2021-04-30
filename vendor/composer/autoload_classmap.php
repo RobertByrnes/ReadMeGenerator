@@ -6,7 +6,14 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'CommentParser' => $baseDir . '/classes/CommentParser.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
+    'DataConnection' => $vendorDir . '/robertbyrnes/dataconnection/classes/DataConnection.php',
+    'Db2Php' => $baseDir . '/classes/Db2Php.php',
+    'Environment' => $vendorDir . '/robertbyrnes/dataconnection/classes/Environment.php',
+    'FileFinder' => $vendorDir . '/robertbyrnes/dir2db/classes/FileFinder.php',
+    'FilePathToDatabase' => $vendorDir . '/robertbyrnes/dir2db/classes/FilePathToDatabase.php',
+    'Mirror' => $baseDir . '/classes/Mirror.php',
     'Smarty' => $vendorDir . '/smarty/smarty/libs/Smarty.class.php',
     'SmartyBC' => $vendorDir . '/smarty/smarty/libs/SmartyBC.class.php',
     'SmartyCompilerException' => $vendorDir . '/smarty/smarty/libs/sysplugins/smartycompilerexception.php',
@@ -180,4 +187,5 @@ return array(
     'Smarty_Variable' => $vendorDir . '/smarty/smarty/libs/sysplugins/smarty_variable.php',
     'TPC_yyStackEntry' => $vendorDir . '/smarty/smarty/libs/sysplugins/smarty_internal_configfileparser.php',
     'TP_yyStackEntry' => $vendorDir . '/smarty/smarty/libs/sysplugins/smarty_internal_templateparser.php',
+    'TemplateEngine' => $vendorDir . '/robertbyrnes/templateengine/classes/TemplateEngine.php',
 );

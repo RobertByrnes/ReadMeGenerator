@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    '' => array($baseDir . '/classes', $vendorDir . '/robertbyrnes/dataconnection/classes', $vendorDir . '/robertbyrnes/templateengine/classes'),
+    '' => array($baseDir . '/classes', $vendorDir . '/robertbyrnes/dataconnection/classes', $vendorDir . '/robertbyrnes/dir2db/classes', $vendorDir . '/robertbyrnes/templateengine/classes'),
 );

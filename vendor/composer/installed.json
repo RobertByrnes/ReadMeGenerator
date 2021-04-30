@@ -7,15 +7,15 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/RobertByrnes/DataConnection.git",
-                "reference": "0502840c3a91615e08778e3ceac9b94ebbe11eea"
+                "reference": "40385ff057180540b9e194f1b2a0d4a9054fb6a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RobertByrnes/DataConnection/zipball/0502840c3a91615e08778e3ceac9b94ebbe11eea",
-                "reference": "0502840c3a91615e08778e3ceac9b94ebbe11eea",
+                "url": "https://api.github.com/repos/RobertByrnes/DataConnection/zipball/40385ff057180540b9e194f1b2a0d4a9054fb6a2",
+                "reference": "40385ff057180540b9e194f1b2a0d4a9054fb6a2",
                 "shasum": ""
             },
-            "time": "2021-04-16T18:55:00+00:00",
+            "time": "2021-04-16T20:15:04+00:00",
             "default-branch": true,
             "type": "library",
             "installation-source": "source",
@@ -34,6 +34,44 @@
                 "source": "https://github.com/RobertByrnes/DataConnection/tree/master"
             },
             "install-path": "../robertbyrnes/dataconnection"
+        },
+        {
+            "name": "robertbyrnes/dir2db",
+            "version": "dev-master",
+            "version_normalized": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RobertByrnes/dir2db.git",
+                "reference": "d9564998fb305128a17bc00d2a567a2ce9974867"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RobertByrnes/dir2db/zipball/d9564998fb305128a17bc00d2a567a2ce9974867",
+                "reference": "d9564998fb305128a17bc00d2a567a2ce9974867",
+                "shasum": ""
+            },
+            "require": {
+                "robertbyrnes/dataconnection": "dev-master@dev"
+            },
+            "time": "2021-04-19T20:42:21+00:00",
+            "default-branch": true,
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "psr-4": {
+                    "": "classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "description": "Uses PHP recursive iterator classes and regex iterator class to recursively search directories for .php files.",
+            "support": {
+                "issues": "https://github.com/RobertByrnes/dir2db/issues",
+                "source": "https://github.com/RobertByrnes/dir2db/tree/master"
+            },
+            "install-path": "../robertbyrnes/dir2db"
         },
         {
             "name": "robertbyrnes/templateengine",

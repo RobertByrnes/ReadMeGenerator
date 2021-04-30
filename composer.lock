@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "49f16ebd45d16394560a08fb38126e89",
+    "content-hash": "02c3509ab4b541a57f59cd72d6630ef9",
     "packages": [
         {
             "name": "robertbyrnes/dataconnection",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/RobertByrnes/DataConnection.git",
-                "reference": "0502840c3a91615e08778e3ceac9b94ebbe11eea"
+                "reference": "40385ff057180540b9e194f1b2a0d4a9054fb6a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RobertByrnes/DataConnection/zipball/0502840c3a91615e08778e3ceac9b94ebbe11eea",
-                "reference": "0502840c3a91615e08778e3ceac9b94ebbe11eea",
+                "url": "https://api.github.com/repos/RobertByrnes/DataConnection/zipball/40385ff057180540b9e194f1b2a0d4a9054fb6a2",
+                "reference": "40385ff057180540b9e194f1b2a0d4a9054fb6a2",
                 "shasum": ""
             },
             "default-branch": true,
@@ -36,7 +36,42 @@
                 "issues": "https://github.com/RobertByrnes/DataConnection/issues",
                 "source": "https://github.com/RobertByrnes/DataConnection/tree/master"
             },
-            "time": "2021-04-16T18:55:00+00:00"
+            "time": "2021-04-16T20:15:04+00:00"
+        },
+        {
+            "name": "robertbyrnes/dir2db",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RobertByrnes/dir2db.git",
+                "reference": "d9564998fb305128a17bc00d2a567a2ce9974867"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RobertByrnes/dir2db/zipball/d9564998fb305128a17bc00d2a567a2ce9974867",
+                "reference": "d9564998fb305128a17bc00d2a567a2ce9974867",
+                "shasum": ""
+            },
+            "require": {
+                "robertbyrnes/dataconnection": "dev-master@dev"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "": "classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "description": "Uses PHP recursive iterator classes and regex iterator class to recursively search directories for .php files.",
+            "support": {
+                "issues": "https://github.com/RobertByrnes/dir2db/issues",
+                "source": "https://github.com/RobertByrnes/dir2db/tree/master"
+            },
+            "time": "2021-04-19T20:42:21+00:00"
         },
         {
             "name": "robertbyrnes/templateengine",
@@ -194,7 +229,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "robertbyrnes/dataconnection": 20,
-        "robertbyrnes/templateengine": 20
+        "robertbyrnes/templateengine": 20,
+        "robertbyrnes/dir2db": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

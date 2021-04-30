@@ -9,11 +9,19 @@ class ComposerStaticInit57cf139922138fb4a6d534fc66e53496
     public static $fallbackDirsPsr4 = array (
         0 => __DIR__ . '/../..' . '/classes',
         1 => __DIR__ . '/..' . '/robertbyrnes/dataconnection/classes',
-        2 => __DIR__ . '/..' . '/robertbyrnes/templateengine/classes',
+        2 => __DIR__ . '/..' . '/robertbyrnes/dir2db/classes',
+        3 => __DIR__ . '/..' . '/robertbyrnes/templateengine/classes',
     );
 
     public static $classMap = array (
+        'CommentParser' => __DIR__ . '/../..' . '/classes/CommentParser.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'DataConnection' => __DIR__ . '/..' . '/robertbyrnes/dataconnection/classes/DataConnection.php',
+        'Db2Php' => __DIR__ . '/../..' . '/classes/Db2Php.php',
+        'Environment' => __DIR__ . '/..' . '/robertbyrnes/dataconnection/classes/Environment.php',
+        'FileFinder' => __DIR__ . '/..' . '/robertbyrnes/dir2db/classes/FileFinder.php',
+        'FilePathToDatabase' => __DIR__ . '/..' . '/robertbyrnes/dir2db/classes/FilePathToDatabase.php',
+        'Mirror' => __DIR__ . '/../..' . '/classes/Mirror.php',
         'Smarty' => __DIR__ . '/..' . '/smarty/smarty/libs/Smarty.class.php',
         'SmartyBC' => __DIR__ . '/..' . '/smarty/smarty/libs/SmartyBC.class.php',
         'SmartyCompilerException' => __DIR__ . '/..' . '/smarty/smarty/libs/sysplugins/smartycompilerexception.php',
@@ -187,6 +195,7 @@ class ComposerStaticInit57cf139922138fb4a6d534fc66e53496
         'Smarty_Variable' => __DIR__ . '/..' . '/smarty/smarty/libs/sysplugins/smarty_variable.php',
         'TPC_yyStackEntry' => __DIR__ . '/..' . '/smarty/smarty/libs/sysplugins/smarty_internal_configfileparser.php',
         'TP_yyStackEntry' => __DIR__ . '/..' . '/smarty/smarty/libs/sysplugins/smarty_internal_templateparser.php',
+        'TemplateEngine' => __DIR__ . '/..' . '/robertbyrnes/templateengine/classes/TemplateEngine.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

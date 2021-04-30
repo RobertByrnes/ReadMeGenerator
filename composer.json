@@ -4,6 +4,7 @@
     "require": {
         "robertbyrnes/dataconnection": "dev-master@dev",
         "robertbyrnes/templateengine": "dev-master@dev",
+        "robertbyrnes/dir2db": "dev-master@dev",
         "smarty/smarty": "v3.1.39",
         "twbs/bootstrap": "4.0.0"
     },

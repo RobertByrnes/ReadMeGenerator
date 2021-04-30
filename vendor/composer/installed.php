@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'da28c26e86a558a73fadcc454ec1479e8fbdd7e1',
+    'reference' => 'f03f53acac33c0efef332ef605b373074c10234a',
     'name' => 'robertbyrnes/readmegenerator',
   ),
   'versions' => 
@@ -19,7 +19,17 @@
       array (
         0 => '9999999-dev',
       ),
-      'reference' => '0502840c3a91615e08778e3ceac9b94ebbe11eea',
+      'reference' => '40385ff057180540b9e194f1b2a0d4a9054fb6a2',
+    ),
+    'robertbyrnes/dir2db' => 
+    array (
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
+      'aliases' => 
+      array (
+        0 => '9999999-dev',
+      ),
+      'reference' => 'd9564998fb305128a17bc00d2a567a2ce9974867',
     ),
     'robertbyrnes/readmegenerator' => 
     array (
@@ -28,7 +38,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'da28c26e86a558a73fadcc454ec1479e8fbdd7e1',
+      'reference' => 'f03f53acac33c0efef332ef605b373074c10234a',
     ),
     'robertbyrnes/templateengine' => 
     array (
